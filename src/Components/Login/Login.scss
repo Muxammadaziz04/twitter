@@ -1,0 +1,179 @@
+.login{
+    width: 100%;
+    height: 100vh;
+    transition: all 0.3s;
+}
+.login__block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    position: relative;
+}
+
+.Form{
+    max-width: 480px;
+    width: 100%;
+    padding: 0 15px;
+    transition: all 0.3s;
+    &__logo{
+        margin: 36px 0;
+    }
+
+    &__title{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 42px;
+        line-height: 49px;
+        margin-bottom: 36px;
+
+        color: #000000;
+    }
+
+    &__input{
+        width: 100%;
+        height: 70px;
+        padding: 0 20px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        margin-bottom: 25px;
+        font-size: 18px;
+        line-height: 24px;
+        transition: all 0.3s;
+        &::placeholder{
+            font-family: 'Segoe UI';
+            font-size: 18px;
+            line-height: 24px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        &:focus{
+            outline: 1px solid rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    &__btn{
+        width: 100%;
+        height: 60px;
+        background: #1DA1F2;
+        border-radius: 76px;
+        border: none;
+        outline: none;
+
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+        transition: all 0.3s;
+
+        &:hover{
+            background: #278afb;
+        }
+    }
+
+    &__sing{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: #1DA1F2;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.login__set{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.set{
+    &__label{
+        margin: 0 8px;
+        display: flex;
+        align-items: center;
+        width: 45px;
+        height: 22px;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+
+    &__input{
+        appearance: none;
+        &:checked + span{
+            left: 23px;
+        }
+    }
+
+    &__span{
+        width: 22px;
+        height: 22px;
+        border: 1px solid #1DA1F2;
+        background-color: #1DA1F2;
+        border-radius: 22px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%) scale(1.2);
+        transition: all 0.3s;
+    }
+    & > svg{
+        color: black;
+    }
+}
+
+.lang__select{
+    display: flex;
+    align-items: center;
+    width: 105px;
+    margin-left: 30px;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    border-radius: 8px;
+    font-size: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.login--dark{
+    background-color: #000;
+    *{
+        color: white;
+    }
+    a{
+        color: #1DA1F2;
+    }
+    input{
+        background: #000;
+        color: white;
+        border-color: rgba(255, 255, 255, 0.5);
+        &:focus{
+            border-color: white;
+        }
+        &::placeholder{
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+    label{
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+    select{
+        background: #000;
+        border-color: rgba(255, 255, 255, 0.5);
+        color: white;
+    }
+    svg{
+        color: white;
+    }
+}
