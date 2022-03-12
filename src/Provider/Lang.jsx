@@ -7,7 +7,6 @@ export const LangContext = React.createContext()
 
 const LangProvider = ({ children }) => {
     const [Lang, setLang] = useState(eng)
-    console.log(Lang);
 
     function changeLang(value) {
         switch (value) {
