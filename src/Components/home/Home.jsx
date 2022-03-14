@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./home.scss"
 import asideLogo from "../../Assets/svg/twitter-aside-logo.svg"
 import home from "../../Assets/svg/home.svg"
@@ -32,35 +33,35 @@ const Home = () => {
                             <li className="aside__block__logo"><img src={asideLogo} alt="logo" /></li>
                             <li className='aside__block__links'>
                                 <img src={home} alt="" />
-                                <a className='active--link' href="#">Home</a>
+                                <Link className='active--link' to="#">Home</Link>
                             </li>
                             <li className='aside__block__links'>
                                 <img src={hash} alt="" />
-                                <a href="#">Explore</a>
+                                <Link to="#">Explore</Link>
                             </li>
                             <li className='aside__block__links'>
                                 <img src={notif} alt="" />
-                                <a href="#">Notifications</a>
+                                <Link to="#">Notifications</Link>
                             </li>
                             <li className='aside__block__links'>
                                 <img src={message} alt="" />
-                                <a href="#">Messages</a>
+                                <Link to="#">Messages</Link>
                             </li>
                             <li className='aside__block__links'>
                                 <img src={book} alt="" />
-                                <a href="#">Bookmarks</a>
+                                <Link to="#">Bookmarks</Link>
                             </li>
                             <li className='aside__block__links'>
                                 <img src={list} alt="" />
-                                <a href="#">Lists</a>
+                                <Link to="#">Lists</Link>
                             </li>
                             <li className='aside__block__links'>
                                 <img src={prof} alt="" />
-                                <a href="#">Profile</a>
+                                <Link to="#">Profile</Link>
                             </li>
                             <li className='aside__block__links'>
                                 <img src={more} alt="" />
-                                <a href="#">More</a>
+                                <Link to="#">More</Link>
                             </li>
                         </ul>
                         <button className='aside__block__btn'>Tweet</button>

@@ -3,7 +3,7 @@ import Logo from "../../Assets/svg/twitter-logo-login.svg"
 import { useContext, useRef, useState } from "react"
 import { ThemeContext } from "../../Provider/Theme"
 import { LangContext } from "../../Provider/Lang"
-import { Navigate } from "react-router-dom"
+import { Navigate, Link } from "react-router-dom"
 
 const Login = () => {
     const { dark, setDark } = useContext(ThemeContext);
@@ -29,8 +29,8 @@ const Login = () => {
         login = await login.json()
         login.error ? alert(login.error) : setStatus(true); localStorage.setItem('token', login.token)
 
-        email.current.value = null
-        pass.current.value = null        
+        email.current.value = ''
+        pass.current.value = ''        
     }
 
     if(status){
@@ -52,8 +52,8 @@ const Login = () => {
                         <input className="Form__input" ref={pass} type="password" placeholder={Lang.passwordIn} />
                         <button className="Form__btn" type="submit">{Lang.logBtn}</button>
                         <div className="Form__sing">
-                            <a className="Form__link" href="#">{Lang.forgot}</a>
-                            <a className="Form__link" href="#">{Lang.singUp}</a>
+                            <Link className="Form__link" to="#">{Lang.forgot}</Link>
+                            <Link className="Form__link" to="#">{Lang.singUp}</Link>
                         </div>
                     </form>
 
