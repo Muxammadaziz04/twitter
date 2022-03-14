@@ -3,7 +3,7 @@ import Logo from "../../Assets/svg/twitter-logo-login.svg"
 import { useContext, useRef, useState } from "react"
 import { ThemeContext } from "../../Provider/Theme"
 import { LangContext } from "../../Provider/Lang"
-import { Navigate, Link } from "react-router-dom"
+import { Navigate } from "react-router-dom"
 
 const Login = () => {
     const { dark, setDark } = useContext(ThemeContext);
