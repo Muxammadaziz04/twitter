@@ -50,8 +50,8 @@ const Login = () => {
                         <input className="Form__input" ref={pass} type="password" placeholder={Lang.passwordIn} />
                         <button className="Form__btn" type="submit">{Lang.logBtn}</button>
                         <div className="Form__sing">
-                            <Link className="Form__link" to="#">{Lang.forgot}</Link>
-                            <Link className="Form__link" to="#">{Lang.singUp}</Link>
+                            <p className="Form__link">{Lang.forgot}</p>
+                            <p className="Form__link">{Lang.singUp}</p>
                         </div>
                     </form>
 

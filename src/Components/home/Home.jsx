@@ -33,35 +33,35 @@ const Home = () => {
                             <li className="aside__block__logo"><img src={asideLogo} alt="logo" /></li>
                             <li className='aside__block__links'>
                                 <img src={home} alt="" />
-                                <Link className='active--link' to="#">Home</Link>
+                                <p className='active--link'>Home</p>
                             </li>
                             <li className='aside__block__links'>
                                 <img src={hash} alt="" />
-                                <Link to="#">Explore</Link>
+                                <p>Explore</p>
                             </li>
                             <li className='aside__block__links'>
                                 <img src={notif} alt="" />
-                                <Link to="#">Notifications</Link>
+                                <p>Notifications</p>
                             </li>
                             <li className='aside__block__links'>
                                 <img src={message} alt="" />
-                                <Link to="#">Messages</Link>
+                                <p>Messages</p>
                             </li>
                             <li className='aside__block__links'>
                                 <img src={book} alt="" />
-                                <Link to="#">Bookmarks</Link>
+                                <p>Bookmarks</p>
                             </li>
                             <li className='aside__block__links'>
                                 <img src={list} alt="" />
-                                <Link to="#">Lists</Link>
+                                <p>Lists</p>
                             </li>
                             <li className='aside__block__links'>
                                 <img src={prof} alt="" />
-                                <Link to="#">Profile</Link>
+                                <p>Profile</p>
                             </li>
                             <li className='aside__block__links'>
                                 <img src={more} alt="" />
-                                <Link to="#">More</Link>
+                                <p>More</p>
                             </li>
                         </ul>
                         <button className='aside__block__btn'>Tweet</button>
@@ -127,7 +127,7 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            <a className='aside__news__link' href="#">Show more</a>
+                            <p className='aside__news__link'>Show more</p>
                         </div>
 
                         <div className="aside__news">
@@ -153,7 +153,7 @@ const Home = () => {
                                     <button className='profile__btn'>Follow</button>
                                 </div>
 
-                                <a className='aside__news__link' href="#">Show more</a>
+                                <p className='aside__news__link'>Show more</p>
                         </div>
                     </div>
                 </aside>
