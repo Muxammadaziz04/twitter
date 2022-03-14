@@ -28,9 +28,7 @@ const Login = () => {
         })
         login = await login.json()
         login.error ? alert(login.error) : setStatus(true); localStorage.setItem('token', login.token)
-
-        email.current.value = ''
-        pass.current.value = ''        
+     
     }
 
     if(status){
