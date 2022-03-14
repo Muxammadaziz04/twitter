@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import "./home.scss"
 import asideLogo from "../../Assets/svg/twitter-aside-logo.svg"
 import home from "../../Assets/svg/home.svg"
