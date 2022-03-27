@@ -68,7 +68,8 @@ const Home = () => {
                 </aside>
 
                 <section className='section'>
-                <div className="section__block">
+                    <a href='#nma'>nma</a>
+                <div className="section__block" style={{height: "150vh"}}>
                     <div className="header__block">
                         <h3 className="section__title">Home</h3>
                         <img src={stars} alt="" />
@@ -89,6 +90,7 @@ const Home = () => {
                         </span>
                     </div>
                 </div>
+                <div id='nma'>Nma</div>
                 </section>
 
                 <aside className='aside2'>
